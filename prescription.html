@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Prescription | Balaji Heal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f7f9fb;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #d71920;
+      color: white;
+      padding: 18px 20px;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .tagline {
+      font-size: 13px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+    }
+    .hero {
+      background: white;
+      text-align: center;
+      padding: 55px 20px;
+    }
+    .hero h1 {
+      color: #d71920;
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      color: #555;
+      max-width: 650px;
+      margin: auto;
+    }
+    .container {
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 18px;
+      margin-bottom: 7px;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .btn {
+      width: 100%;
+      border: none;
+      margin-top: 22px;
+      padding: 14px;
+      border-radius: 7px;
+      background: #25d366;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .note {
+      margin-top: 18px;
+      background: #fff5f5;
+      padding: 15px;
+      border-left: 4px solid #d71920;
+      font-size: 14px;
+      color: #555;
+    }
+    .contact {
+      text-align: center;
+      background: #d71920;
+      color: white;
+      padding: 35px 20px;
+      margin-top: 40px;
+    }
+    .contact a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 750px) {
+      .header-inner {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0 7px;
+        font-size: 14px;
+      }
+      .box {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+<div>
+  <div class="logo">✚ BALAJI HEAL</div>
+  <div class="tagline">Care in Minutes</div>
+</div>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="prescription.html">Prescription</a>
+  <a href="contact.html">Contact</a>
+</nav>
+  </div>
+</header>
+<section class="hero">
+  <h1>Send Your Prescription</h1>
+  <p>
+    Enter your details below. You can then send your medicine request
+    directly to Balaji Heal through WhatsApp.
+  </p>
+</section>
+<div class="container">
+  <div class="box">
+<form onsubmit="sendWhatsApp(); return false;">
+  <label for="name">Your Name</label>
+  <input
+    type="text"
+    id="name"
+    placeholder="Enter your name"
+    required
+  >
+  <label for="phone">Phone Number</label>
+  <input
+    type="tel"
+    id="phone"
+    placeholder="Enter your phone number"
+    required
+  >
+  <label for="medicine">Medicine / Prescription Details</label>
+  <textarea
+    id="medicine"
+    placeholder="Type the medicines you need or describe your prescription"
+    required
+  ></textarea>
+  <button class="btn" type="submit">
+    💬 Send Request on WhatsApp
+  </button>
+</form>
+<div class="note">
+  <strong>Important:</strong>
+  Please send a clear photograph of your prescription through WhatsApp
+  if required. Prescription medicines will be supplied only in accordance
+  with applicable laws and a valid prescription.
+</div>
+  </div>
+</div>
+<section class="contact">
+  <h2>Need Help?</h2>
+  <p>
+    Call us at
+    <a href="tel:+918620987758">+91 86209 87758</a>
+  </p>
+</section>
+<footer>
+  © 2026 Balaji Heal. All Rights Reserved.
+</footer>
+<script>
+function sendWhatsApp() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const medicine = document.getElementById("medicine").value;
+  const message =
+    "Hello Balaji Heal,%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A%0A" +
+    "Medicine / Prescription Details:%0A" +
+    encodeURIComponent(medicine) +
+    "%0A%0A" +
+    "I would like to order/check availability.";
+  const whatsappNumber = "918620987758";
+  window.open(
+    "https://wa.me/" + whatsappNumber + "?text=" + message,
+    "_blank"
+  );
+}
+</script>
+</body>
+</html>
