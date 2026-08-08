@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Balaji Heal | Pharmacy & Healthcare</title>
-<meta name="description" content="Balaji Heal - Your trusted pharmacy and healthcare partner. Medicines, surgical items, prescription support and home delivery.">
+<meta name="description" content="Balaji Heal - Your trusted pharmacy and healthcare partner. Medicines, healthcare products, surgical items, prescription support and home delivery.">
 <style>
 *{
     margin:0;
@@ -15,9 +15,9 @@ html{
     scroll-behavior:smooth;
 }
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f6f8fb;
-    color:#17212b;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#17202a;
+    background:#f7fbfd;
     line-height:1.6;
 }
 a{
@@ -30,7 +30,7 @@ a{
 }
 /* TOP BAR */
 .topbar{
-    background:#111827;
+    background:#063b45;
     color:#fff;
     font-size:13px;
 }
@@ -39,25 +39,24 @@ a{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:15px;
 }
 .topbar a{
     color:#fff;
 }
 /* HEADER */
 header{
-    background:#fff;
-    border-bottom:1px solid #e8edf2;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #e5eef1;
     position:sticky;
     top:0;
     z-index:1000;
 }
 .header-inner{
-    min-height:78px;
+    min-height:82px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    gap:30px;
+    align-items:center;
+    gap:25px;
 }
 .brand{
     display:flex;
@@ -65,96 +64,970 @@ header{
     gap:12px;
 }
 .brand-icon{
-    width:48px;
-    height:48px;
-    background:#d71920;
-    color:#fff;
-    border-radius:12px;
+    width:50px;
+    height:50px;
+    background:linear-gradient(135deg,#e31b23,#ff4d54);
+    color:white;
+    border-radius:14px;
     display:flex;
-    align-items:center;
     justify-content:center;
-    font-size:27px;
+    align-items:center;
+    font-size:28px;
     font-weight:bold;
-    box-shadow:0 7px 18px rgba(215,25,32,.22);
+    box-shadow:0 8px 20px rgba(227,27,35,.25);
 }
 .brand-name{
-    color:#111827;
-    font-size:24px;
+    font-size:25px;
     font-weight:800;
-    letter-spacing:-.5px;
+    color:#063b45;
 }
 .brand-name span{
-    color:#d71920;
+    color:#e31b23;
 }
 .brand-tagline{
-    color:#718096;
-    font-size:11px;
-    letter-spacing:1.5px;
+    font-size:10px;
+    color:#75858b;
     text-transform:uppercase;
+    letter-spacing:1.7px;
 }
 nav{
     display:flex;
     align-items:center;
-    gap:28px;
+    gap:26px;
 }
 nav a{
-    color:#374151;
+    color:#39484f;
     font-size:14px;
     font-weight:700;
 }
 nav a:hover{
-    color:#d71920;
+    color:#e31b23;
 }
 .nav-button{
-    background:#d71920;
+    background:#e31b23;
     color:#fff !important;
-    padding:11px 18px;
-    border-radius:7px;
+    padding:12px 18px;
+    border-radius:8px;
 }
 /* HERO */
 .hero{
-    position:relative;
-    overflow:hidden;
     background:
-        radial-gradient(circle at 90% 15%, rgba(215,25,32,.10), transparent 30%),
-        linear-gradient(135deg,#fff 0%,#fff8f8 55%,#f8fafc 100%);
-    padding:78px 0 72px;
+    radial-gradient(circle at 85% 20%,rgba(44,190,195,.17),transparent 28%),
+    radial-gradient(circle at 10% 90%,rgba(227,27,35,.08),transparent 28%),
+    linear-gradient(135deg,#ffffff,#f0fbfc);
+    padding:72px 0 70px;
+    overflow:hidden;
 }
 .hero-content{
     display:grid;
-    grid-template-columns:1.15fr .85fr;
+    grid-template-columns:1.05fr .95fr;
     align-items:center;
-    gap:55px;
+    gap:45px;
 }
-.hero-badge{
+.badge{
     display:inline-flex;
     align-items:center;
     gap:8px;
-    background:#fff;
-    border:1px solid #f1d0d2;
-    color:#c5161d;
-    padding:8px 13px;
+    padding:8px 14px;
     border-radius:30px;
+    background:#fff;
+    color:#e31b23;
+    border:1px solid #f2d5d6;
     font-size:13px;
     font-weight:700;
     margin-bottom:20px;
 }
 .hero h1{
+    color:#063b45;
     font-size:56px;
-    line-height:1.05;
+    line-height:1.04;
     letter-spacing:-2px;
-    color:#111827;
     margin-bottom:18px;
 }
 .hero h1 span{
-    color:#d71920;
+    color:#e31b23;
 }
-.hero-text{
-    color:#5b6573;
+.hero p{
+    max-width:600px;
+    color:#60727a;
     font-size:18px;
-    max-width:610px;
     margin-bottom:28px;
 }
 .hero-buttons{
     display:flex;
-    flex-wrap:
+    gap:12px;
+    flex-wrap:wrap;
+}
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 21px;
+    border-radius:9px;
+    font-size:14px;
+    font-weight:800;
+    transition:.2s;
+}
+.btn:hover{
+    transform:translateY(-2px);
+}
+.btn-red{
+    background:#e31b23;
+    color:white;
+    box-shadow:0 8px 20px rgba(227,27,35,.22);
+}
+.btn-green{
+    background:#16a765;
+    color:white;
+    box-shadow:0 8px 20px rgba(22,167,101,.2);
+}
+.btn-white{
+    background:white;
+    color:#063b45;
+    border:1px solid #dce8eb;
+}
+/* HERO IMAGE */
+.hero-image{
+    position:relative;
+}
+.hero-image img{
+    width:100%;
+    max-width:540px;
+    height:390px;
+    object-fit:cover;
+    border-radius:28px;
+    display:block;
+    box-shadow:0 25px 60px rgba(6,59,69,.18);
+}
+.floating-card{
+    position:absolute;
+    left:-25px;
+    bottom:25px;
+    background:white;
+    padding:16px 18px;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,.13);
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.floating-icon{
+    width:42px;
+    height:42px;
+    border-radius:11px;
+    background:#e9faf4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+}
+.floating-card strong{
+    display:block;
+    color:#063b45;
+    font-size:14px;
+}
+.floating-card small{
+    color:#7b8a90;
+}
+/* QUICK SERVICES */
+.quick{
+    background:white;
+    margin-top:-25px;
+    position:relative;
+    z-index:5;
+}
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    box-shadow:0 15px 40px rgba(6,59,69,.10);
+    border-radius:16px;
+    overflow:hidden;
+}
+.quick-item{
+    padding:24px 18px;
+    display:flex;
+    align-items:center;
+    gap:13px;
+    background:white;
+    border-right:1px solid #edf1f2;
+}
+.quick-item:last-child{
+    border-right:0;
+}
+.quick-icon{
+    width:48px;
+    height:48px;
+    border-radius:13px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff0f0;
+    font-size:23px;
+}
+.quick-item h3{
+    font-size:14px;
+    color:#063b45;
+}
+.quick-item p{
+    color:#7a898e;
+    font-size:12px;
+}
+/* SECTION */
+.section{
+    padding:75px 0;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:42px;
+}
+.section-title .small{
+    color:#e31b23;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1.8px;
+    font-size:12px;
+}
+.section-title h2{
+    color:#063b45;
+    font-size:36px;
+    margin:8px 0 10px;
+}
+.section-title p{
+    color:#708087;
+    max-width:650px;
+    margin:auto;
+}
+/* SERVICES */
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+.service-card{
+    background:white;
+    border:1px solid #e8eff1;
+    border-radius:17px;
+    padding:28px;
+    transition:.25s;
+}
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 40px rgba(6,59,69,.10);
+}
+.service-icon{
+    width:58px;
+    height:58px;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff1f1;
+    font-size:27px;
+    margin-bottom:20px;
+}
+.service-card h3{
+    color:#063b45;
+    margin-bottom:8px;
+    font-size:19px;
+}
+.service-card p{
+    color:#718087;
+    font-size:14px;
+}
+/* OFFER */
+.offer{
+    background:
+    linear-gradient(120deg,#e31b23,#c60e15);
+    color:white;
+    padding:50px 0;
+    position:relative;
+    overflow:hidden;
+}
+.offer:after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    right:-100px;
+    top:-150px;
+}
+.offer-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+    position:relative;
+    z-index:2;
+}
+.offer-label{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    opacity:.85;
+}
+.offer h2{
+    font-size:34px;
+    margin:5px 0;
+}
+.offer p{
+    opacity:.92;
+}
+.offer .btn{
+    background:white;
+    color:#d71920;
+    white-space:nowrap;
+}
+/* HEALTHCARE IMAGE SECTION */
+.image-section{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:45px;
+    align-items:center;
+}
+.image-section img{
+    width:100%;
+    height:390px;
+    object-fit:cover;
+    border-radius:22px;
+    box-shadow:0 20px 45px rgba(6,59,69,.13);
+}
+.image-content .small{
+    color:#e31b23;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1.7px;
+    font-weight:800;
+}
+.image-content h2{
+    color:#063b45;
+    font-size:36px;
+    line-height:1.15;
+    margin:9px 0 16px;
+}
+.image-content p{
+    color:#6c7c82;
+    margin-bottom:20px;
+}
+.check-list{
+    list-style:none;
+    display:grid;
+    gap:12px;
+}
+.check-list li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#34464d;
+    font-weight:600;
+    font-size:14px;
+}
+.check{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background:#e8f8f1;
+    color:#16a765;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    font-weight:bold;
+}
+/* PRESCRIPTION */
+.prescription{
+    background:#eef9fa;
+}
+.prescription-box{
+    display:grid;
+    grid-template-columns:1fr .8fr;
+    align-items:center;
+    gap:40px;
+    background:white;
+    padding:45px;
+    border-radius:24px;
+    box-shadow:0 15px 45px rgba(6,59,69,.08);
+}
+.prescription-box h2{
+    color:#063b45;
+    font-size:34px;
+    margin-bottom:12px;
+}
+.prescription-box p{
+    color:#718087;
+    margin-bottom:22px;
+}
+.prescription-features{
+    display:grid;
+    gap:13px;
+}
+.prescription-feature{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#41535a;
+    font-size:14px;
+    font-weight:600;
+}
+.prescription-feature span{
+    width:28px;
+    height:28px;
+    background:#fff0f0;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* CONTACT */
+.contact{
+    background:#063b45;
+    color:white;
+    padding:65px 0;
+}
+.contact-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+.contact h2{
+    font-size:34px;
+    margin-bottom:12px;
+}
+.contact p{
+    color:#c7d8dc;
+}
+.contact-cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+.contact-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+    padding:20px;
+    border-radius:14px;
+}
+.contact-card small{
+    color:#9fb9bf;
+}
+.contact-card strong{
+    display:block;
+    margin-top:5px;
+}
+.contact-card a{
+    color:white;
+}
+/* FOOTER */
+footer{
+    background:#032a31;
+    color:#a9c0c5;
+    padding:25px 0;
+}
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+.footer-brand{
+    color:white;
+    font-size:18px;
+    font-weight:800;
+}
+.footer-brand span{
+    color:#ff4c53;
+}
+.footer-links{
+    display:flex;
+    gap:20px;
+}
+.footer-links a{
+    color:#a9c0c5;
+    font-size:13px;
+}
+.copyright{
+    font-size:12px;
+}
+/* MOBILE */
+@media(max-width:900px){
+    .header-inner{
+        min-height:72px;
+    }
+    nav{
+        gap:12px;
+    }
+    nav a:not(.nav-button){
+        display:none;
+    }
+    .hero-content{
+        grid-template-columns:1fr;
+    }
+    .hero{
+        padding:55px 0 60px;
+    }
+    .hero h1{
+        font-size:44px;
+    }
+    .hero-image img{
+        max-width:100%;
+        height:330px;
+    }
+    .floating-card{
+        left:15px;
+    }
+    .quick-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .quick-item:nth-child(2){
+        border-right:0;
+    }
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .image-section{
+        grid-template-columns:1fr;
+    }
+    .prescription-box{
+        grid-template-columns:1fr;
+    }
+    .contact-inner{
+        grid-template-columns:1fr;
+    }
+}
+@media(max-width:600px){
+    .topbar-inner{
+        justify-content:center;
+        text-align:center;
+    }
+    .topbar-inner span{
+        display:none;
+    }
+    .brand-name{
+        font-size:21px;
+    }
+    .brand-icon{
+        width:43px;
+        height:43px;
+        font-size:24px;
+    }
+    .nav-button{
+        padding:10px 13px;
+        font-size:12px !important;
+    }
+    .hero{
+        padding:42px 0 50px;
+    }
+    .hero h1{
+        font-size:39px;
+        letter-spacing:-1.5px;
+    }
+    .hero p{
+        font-size:16px;
+    }
+    .hero-image img{
+        height:260px;
+        border-radius:20px;
+    }
+    .floating-card{
+        position:relative;
+        left:0;
+        bottom:auto;
+        margin-top:-25px;
+        width:85%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .quick-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .quick-item{
+        padding:18px 12px;
+    }
+    .quick-item:nth-child(3){
+        border-top:1px solid #edf1f2;
+    }
+    .quick-item:nth-child(4){
+        border-top:1px solid #edf1f2;
+    }
+    .section{
+        padding:55px 0;
+    }
+    .section-title h2{
+        font-size:29px;
+    }
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+    .offer-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .offer h2{
+        font-size:29px;
+    }
+    .image-section img{
+        height:280px;
+    }
+    .image-content h2{
+        font-size:29px;
+    }
+    .prescription-box{
+        padding:28px 22px;
+    }
+    .prescription-box h2{
+        font-size:29px;
+    }
+    .contact-cards{
+        grid-template-columns:1fr;
+    }
+    .footer-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+    .footer-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="container topbar-inner">
+        <span>Trusted Pharmacy & Healthcare Partner</span>
+        <a href="tel:+918620987758">📞 +91 86209 87758</a>
+    </div>
+</div>
+<!-- HEADER -->
+<header>
+<div class="container header-inner">
+<a href="index.html" class="brand">
+    <div class="brand-icon">✚</div>
+    <div>
+        <div class="brand-name">BALAJI <span>HEAL</span></div>
+        <div class="brand-tagline">Care in Minutes</div>
+    </div>
+</a>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="prescription.html">Prescription</a>
+    <a href="contact.html">Contact</a>
+    <a class="nav-button" href="tel:+918620987758">
+        Call Now
+    </a>
+</nav>
+</div>
+</header>
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-content">
+<div>
+    <div class="badge">
+        ✦ Your Health, Our Priority
+    </div>
+    <h1>
+        Quality Healthcare.<br>
+        <span>Care in Minutes.</span>
+    </h1>
+    <p>
+        Welcome to Balaji Heal — your trusted neighbourhood pharmacy
+        for genuine medicines, healthcare products, surgical items and
+        convenient medicine support.
+    </p>
+    <div class="hero-buttons">
+        <a class="btn btn-red" href="tel:+918620987758">
+            📞 Call Balaji Heal
+        </a>
+        <a class="btn btn-green"
+           href="https://wa.me/918620987758?text=Hello%20Balaji%20Heal,%20I%20would%20like%20to%20know%20about%20medicine%20availability."
+           target="_blank">
+            💬 WhatsApp Us
+        </a>
+        <a class="btn btn-white" href="prescription.html">
+            📋 Send Prescription
+        </a>
+    </div>
+</div>
+<div class="hero-image">
+    <img
+    src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=1000&q=85"
+    alt="Pharmacy healthcare">
+    <div class="floating-card">
+        <div class="floating-icon">✓</div>
+        <div>
+            <strong>Healthcare Made Easy</strong>
+            <small>Call or WhatsApp us</small>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- QUICK SERVICES -->
+<section class="quick">
+<div class="container quick-grid">
+<div class="quick-item">
+    <div class="quick-icon">💊</div>
+    <div>
+        <h3>Medicines</h3>
+        <p>Quality healthcare products</p>
+    </div>
+</div>
+<div class="quick-item">
+    <div class="quick-icon">🚚</div>
+    <div>
+        <h3>Home Delivery</h3>
+        <p>Ask us about delivery</p>
+    </div>
+</div>
+<div class="quick-item">
+    <div class="quick-icon">📋</div>
+    <div>
+        <h3>Prescription</h3>
+        <p>Easy medicine requests</p>
+    </div>
+</div>
+<div class="quick-item">
+    <div class="quick-icon">🩹</div>
+    <div>
+        <h3>Surgical Items</h3>
+        <p>Healthcare essentials</p>
+    </div>
+</div>
+</div>
+</section>
+<!-- SERVICES -->
+<section class="section">
+<div class="container">
+<div class="section-title">
+    <div class="small">What We Offer</div>
+    <h2>Everything You Need, Under One Roof</h2>
+    <p>
+        From everyday medicines to essential healthcare products,
+        Balaji Heal is here to make your pharmacy experience simple.
+    </p>
+</div>
+<div class="services-grid">
+    <div class="service-card">
+        <div class="service-icon">💊</div>
+        <h3>Prescription Medicines</h3>
+        <p>
+            Genuine medicines supplied in accordance with valid
+            prescriptions and applicable regulations.
+        </p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🩺</div>
+        <h3>Healthcare Products</h3>
+        <p>
+            Everyday healthcare essentials for you and your family.
+        </p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🩹</div>
+        <h3>Surgical Items</h3>
+        <p>
+            A range of surgical and medical-use products for your needs.
+        </p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🚚</div>
+        <h3>Home Delivery</h3>
+        <p>
+            Contact us to check availability and home-delivery options
+            in your area.
+        </p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">📋</div>
+        <h3>Prescription Support</h3>
+        <p>
+            Send your medicine requirements easily through WhatsApp.
+        </p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">💬</div>
+        <h3>Customer Assistance</h3>
+        <p>
+            Call or WhatsApp us for medicine availability and support.
+        </p>
+    </div>
+</div>
+</div>
+</section>
+<!-- DISCOUNT -->
+<section class="offer">
+<div class="container offer-inner">
+<div>
+    <div class="offer-label">
+        Special Pharmacy Offer
+    </div>
+    <h2>Flat 20% Discount*</h2>
+    <p>
+        Save on selected medicines and healthcare products.
+    </p>
+</div>
+<a class="btn" href="https://wa.me/918620987758?text=Hello%20Balaji%20Heal,%20I%20would%20like%20to%20know%20about%20your%20discount%20offer." target="_blank">
+    Ask About Offer →
+</a>
+</div>
+</section>
+<!-- HEALTHCARE SECTION -->
+<section class="section">
+<div class="container image-section">
+<div>
+    <img
+    src="https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?auto=format&fit=crop&w=1000&q=85"
+    alt="Healthcare consultation">
+</div>
+<div class="image-content">
+    <div class="small">Why Balaji Heal</div>
+    <h2>
+        Your trusted local pharmacy, focused on your care.
+    </h2>
+    <p>
+        We believe getting your everyday healthcare needs should be
+        convenient, straightforward and dependable.
+    </p>
+    <ul class="check-list">
+        <li>
+            <span class="check">✓</span>
+            Genuine pharmaceutical products
+        </li>
+        <li>
+            <span class="check">✓</span>
+            Convenient prescription support
+        </li>
+        <li>
+            <span class="check">✓</span>
+            Home-delivery assistance
+        </li>
+        <li>
+            <span class="check">✓</span>
+            Surgical and healthcare essentials
+        </li>
+        <li>
+            <span class="check">✓</span>
+            Easy phone & WhatsApp support
+        </li>
+    </ul>
+</div>
+</div>
+</section>
+<!-- PRESCRIPTION -->
+<section class="section prescription">
+<div class="container">
+<div class="prescription-box">
+    <div>
+        <div class="section-title" style="text-align:left;margin-bottom:18px;">
+            <div class="small">Quick & Convenient</div>
+            <h2>Need Medicines?</h2>
+        </div>
+        <p>
+            Send your medicine requirements through our prescription
+            page and connect with Balaji Heal on WhatsApp.
+        </p>
+        <a class="btn btn-red" href="prescription.html">
+            📋 Send Prescription
+        </a>
+    </div>
+    <div class="prescription-features">
+        <div class="prescription-feature">
+            <span>📱</span>
+            Simple WhatsApp communication
+        </div>
+        <div class="prescription-feature">
+            <span>💊</span>
+            Check medicine availability
+        </div>
+        <div class="prescription-feature">
+            <span>🚚</span>
+            Ask about home delivery
+        </div>
+        <div class="prescription-feature">
+            <span>✓</span>
+            Convenient pharmacy support
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="contact">
+<div class="container contact-inner">
+<div>
+    <div class="offer-label">
+        Visit or Contact Us
+    </div>
+    <h2>We're here when you need us.</h2>
+    <p>
+        Call, WhatsApp or visit Balaji Heal for your pharmacy and
+        healthcare requirements.
+    </p>
+    <div class="hero-buttons" style="margin-top:22px;">
+        <a class="btn btn-green"
+           href="https://wa.me/918620987758"
+           target="_blank">
+            💬 WhatsApp
+        </a>
+        <a class="btn btn-white"
+           href="contact.html">
+            📍 Contact & Location
+        </a>
+    </div>
+</div>
+<div class="contact-cards">
+    <div class="contact-card">
+        <small>PHONE</small>
+        <strong>
+            <a href="tel:+918620987758">
+                +91 86209 87758
+            </a>
+        </strong>
+    </div>
+    <div class="contact-card">
+        <small>WHATSAPP</small>
+        <strong>
+            <a href="https://wa.me/918620987758" target="_blank">
+                Chat With Us
+            </a>
+        </strong>
+    </div>
+    <div class="contact-card">
+        <small>LOCATION</small>
+        <strong>
+            Baranagar, Kolkata
+        </strong>
+    </div>
+    <div class="contact-card">
+        <small>OPENING HOURS</small>
+        <strong>
+            8:00 AM – 11:00 PM
+        </strong>
+    </div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="container footer-inner">
+<div>
+    <div class="footer-brand">
+        BALAJI <span>HEAL</span>
+    </div>
+    <div class="copyright">
+        © 2026 Balaji Heal. All Rights Reserved.
+    </div>
+</div>
+<div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="prescription.html">Prescription</a>
+    <a href="contact.html">Contact</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
